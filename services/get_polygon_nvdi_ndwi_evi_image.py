@@ -84,9 +84,9 @@ ndvi.rio.to_raster("ndvi.tif")
 ndwi.rio.to_raster("ndwi.tif")
 evi.rio.to_raster("evi.tif")
 
-print("NDVI Mean:", np.nanmean(ndvi_np))
-print("NDWI Mean:", np.nanmean(ndwi_np))
-print("EVI Mean:", np.nanmean(evi_np))
+print("NDVI Mean:", float(np.nanmean(ndvi_np)))
+print("NDWI Mean:", float(np.nanmean(ndwi_np)))
+print("EVI Mean:", float(np.nanmean(evi_np)))
 
 print("Images saved:")
 print("ndvi.png, ndwi.png, evi.png")
